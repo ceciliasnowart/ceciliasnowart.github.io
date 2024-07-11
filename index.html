@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Ceci Cic Cecilia Cicely</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <p>
+        <b>Artist. BCN. <a href="https://www.instagram.com/ceciliasnowart/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+          <a href="mailto:cicelysorcha@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+        </b>
+      </p>
+    </div>
+  </div>
+
+  <!--
+  studio_balc
+  studio_blue
+  studio_outline
+  studio_wall
+  blue_balc.jpg
+  blue_green_floor.jpg
+  blue_red_floor.jpg
+  blue_sun.jpg
+  blue_swirl_floor.jpg
+  blue_yellow_floor.jpg
+  forgive_forget_floor.jpg
+  main_red_face.jpg
+  orange_blue_floor.jpg
+  orange_green_floor.jpg
+  red_blue_back.jpg
+  red_blue_floor.jpg
+  red_eye_shadow.jpg
+  red_orange_floor.jpg
+  red_pensive_floor.jpg
+  red_sky_floor.jpg
+  sun_wall.jpg
+  tiger_floor.jpg
+  zero_one_floor.jpg
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  -->
+
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="artworks/studio_balc.jpg" style="width:100%" onclick="onClick(this)" alt="Artist Studio. Barcelona.">
+      <img src="artworks/studio_blue.jpg" style="width:100%" onclick="onClick(this)" alt="Artist Studio. Barcelona.">
+      <img src="artworks/studio_outline.jpg" style="width:100%" onclick="onClick(this)" alt="Artist Studio. Barcelona.">
+      <img src="artworks/orange_green_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature. Larger resolution/price on request.">
+      <img src="artworks/red_blue_back.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing. Larger resolution/price on request.">
+   </div>
+
+   <div class="w3-quarter">
+      <img src="artworks/studio_wall.jpg" style="width:100%" onclick="onClick(this)" alt="Artist Studio. Barcelona.">
+      <img src="artworks/zero_one_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert. Larger resolution/price on request.">
+      <img src="artworks/blue_green_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!. Larger resolution/price on request.">
+      <img src="artworks/red_blue_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful. Larger resolution/price on request.">
+      <img src="artworks/red_eye_shadow.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature. Larger resolution/price on request.">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="artworks/blue_sun.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert. Larger resolution/price on request.">
+      <img src="artworks/blue_swirl_floor.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset. Larger resolution/price on request.">
+      <img src="artworks/blue_yellow_floor.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful. Larger resolution/price on request.">
+      <img src="artworks/red_orange_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing. Larger resolution/price on request.">
+      <img src="artworks/red_pensive_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful. Larger resolution/price on request.">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="artworks/forgive_forget_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature. Larger resolution/price on request.">
+      <img src="artworks/tiger_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful. Larger resolution/price on request.">
+      <img src="artworks/orange_blue_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful. Larger resolution/price on request.">
+      <img src="artworks/red_sky_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature. Larger resolution/price on request.">
+      <img src="artworks/sun_wall.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing. Larger resolution/price on request.">
+
+    </div>
+
+  </div>
+
+  <!-- Pagination
+<img src="artworks/main_red_face.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <div class="w3-quarter">
+        <img src="artworks/orange_green_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="artworks/red_blue_back.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+        <img src="artworks/red_blue_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+
+      <div class="w3-quarter">
+        <img src="artworks/red_eye_shadow.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="artworks/red_orange_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+        <img src="artworks/red_pensive_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+
+      <div class="w3-quarter">
+        <img src="artworks/red_sky_floor.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="artworks/sun_wall.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+        <img src="artworks/tiger_floor.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  -->
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Cicely "Ceci" Sinclair</b></h4>
+    <img src="artworks/CeciArt.png" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>About the artist</h4>
+      <p>
+        Ceci is a Scottish self-taught artist, living in Barcelona. Her artistic roots emerged in her upbringing in the countryside, inspired by the human condition, nature, the stubborn but humorous Scottish mentality, and the expressive nature of art when dealing with emotion.  Using art to pass through periods of injury and to process tumultuous events, her abstract and surrealist paintings draw from diverse influences, including street art, photography, and the dynamic music of Africa and South/Central America. Her creative process is spontaneous or fluid, with works often evolving years later. Using mainly acrylics, spray paint, and markers, her aim is to connect with our human experience via colour and gaze, painting feelings we all share.
+      </p>
+      <hr class="w3-opacity">
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Red Era</b></h4>
+    <img src="artworks/red_era.png" alt="Red Era" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Red Era</h4>
+      <p>
+        Ceci’s first solo show “Red Era” is the culmination of work created over the last 4 years, on moving to Barcelona. The work is an exploration of colour, form, and feeling, representing a period filled with warmth and joy, as well as intense, turbulent emotions. Ceci’s fiery use of colour and emphasis on facial expressions aims to draw attention to the hidden emotions and often unspoken truths that we obscure in everyday life; the masks we wear.
+
+        In her words <i>“I paint to convey our humanity, to process the madness, paint what I love, and to add colour and diversion to life. Art can reflect our own emotions, in a less confronting manner. If art is therapy, then welcome to my practice”</i>
+
+      </p>
+
+      <h5>Inquiries</h5>
+      <p>Interested in acquiring one of the pieces from this solo show? Please contact the artist for more information: <a href="mailto:someone@example.com">cicelysorcha@gmail.com</a></p>
+        <!--
+      <p>
+        <i>"Red Era" is an exploration of color, form, and emotion by Scottish artist Cicely (Ceci) Sinclair (b. 1995). Created over four years since her move to Barcelona, this body of work encapsulates a period marked by both joy and intense emotional turmoil. Cicely's bold use of color and emphasis on facial expressions capture the fluidity of carefree movement and the depth of unspoken emotions. Through the eyes of her subjects, she invites viewers to connect with the truths we often ignore or conceal in daily life.
+
+        Cicely's art practice has flourished in Barcelona, reflecting the city's vibrant energy and the tumultuous nature of recent global events. Her abstract and surrealist paintings draw inspiration from street art, photography, and the lively music of Africa and South/Central America. The influence of music is evident in her use of bright, bold colors, mirroring the rich cultural expressions she admires. Her creative process is spontaneous and fluid, often beginning with a color palette and evolving through revisits and reworks over time.
+
+        A self-taught artist, Cicely's passion for art grew during her upbringing in northern Scotland. The bright colors of nature and a indepth consumption of books, films, and music nurtured her imagination. Inspired by the human condition and nature, she uses acrylics, spray paint, and markers to express emotional states through strong colors and abstract forms, aiming to connect with others experiencing similar human moments.</i>
+
+      </p>
+       -->
+
+    </div>
+  </div>
+
+  <!-- Contact section
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Interested in acquiring one of the pieces from this solo show? Please contact the artist for more information</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+  -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>Ceci Cic Cecilia Cicely</h3>
+        <p><b>Artist. BCN.</b></p>
+      </div>
+
+      <div class="w3-third" id="contact">
+
+        <h3>Contact</h3>
+        <p><a href="https://www.instagram.com/ceciliasnowart/"><i class="fa fa-instagram w3-hover-opacity"></i> Find me on instagram</a></p>
+        <p><a href="mailto:cicelysorcha@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i> Contact me via email</a></p>
+
+      </div>
+
+      <div class="w3-third">
+
+        <h3>Inquiries</h3>
+        <p>Interested in acquiring one of the pieces from this solo show? Please contact the artist for more information: <a href="mailto:someone@example.com">cicelysorcha@gmail.com</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
